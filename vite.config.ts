@@ -5,6 +5,7 @@ import viteTsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: '/worst-website/',
   plugins: [
     viteTsConfigPaths({ projects: ['./tsconfig.json'] }),
     tanstackRouter(),
