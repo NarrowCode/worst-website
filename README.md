@@ -1,5 +1,7 @@
 # The Worst Website Ever Built
 
+**[Live Demo](https://narrowcode.github.io/worst-website/)**
+
 An intentionally inaccessible e-commerce site built to test the limits of automated accessibility tools like [axe](https://www.deque.com/axe/) and [pa11y](https://pa11y.org/).
 
 ## What is this?

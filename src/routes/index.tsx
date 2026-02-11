@@ -234,9 +234,6 @@ function LandingPage() {
             </a>{' '}
             for accessibility education and testing.
           </p>
-          <p className="text-sm text-slate-400">
-            This landing page is fully accessible. The shop pages are not—that's the point.
-          </p>
         </div>
       </footer>
     </>
