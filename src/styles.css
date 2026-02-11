@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  /* Good contrast colors for landing page */
+  --color-accent: #0ea5e9;
+  --color-accent-dark: #0284c7;
+
+  /* Bad contrast colors for shop pages */
+  --color-bad-gray: #9ca3af;
+  --color-bad-light-gray: #d1d5db;
+  --color-bad-bg: #f3f4f6;
+
+  /* Font */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  @apply m-0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Animation for landing page */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float {
+    animation: none;
+  }
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-sky-500;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  @apply absolute -top-10 left-4 bg-slate-900 text-white px-4 py-2 z-50 rounded-md;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  @apply top-4;
+}
